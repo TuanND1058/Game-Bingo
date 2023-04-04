@@ -21,11 +21,15 @@ p {
   gap: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.version {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
 .add-ticket {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
-  position: fixed;
   z-index: 2;
 }
 .add-ticket button {
