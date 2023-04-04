@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="add-ticket">
+      <button id="addTicket" class="button">add ticket</button>
+    </div> -->
+
+    <div class="nav">
+      <div class="add-number">
+        <input
+          id="inputNumber"
+          class="input-number"
+          type="text"
+          maxlength="2"
+        />
+        <button id="addNumber" class="button">add number</button>
+        <button id="editNumber" class="button">edit number</button>
+        <button id="addTicket" class="button">add ticket</button>
+      </div>
+      <div class="list-number">
+        <p id="listNumber"></p>
+      </div>
+    </div>
+
+    <div id="addNumberModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="cards">
+          <div class="card">
+            <div class="bor">
+              <span>edit number</span>
+              <div>
+                <button id="saveNumber" class="button save">save</button>
+                <button onclick="closeModal('number')" class="button close">
+                  close
+                </button>
+              </div>
+            </div>
+            <textarea id="listEditNumber" rows="10" cols="20"></textarea>
+          </div>
+        </div>
+        <p>vui lòng nhập số</p>
+      </div>
+    </div>
+    <div id="addTicketModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="alert" class="alert"></p>
+        <input type="hidden" id="idEdit" />
+        <div class="cards">
+          <div class="card">
+            <div class="bor">
+              <span id="nameTicket">add new</span>
+              <div>
+                <button id="editTicket" class="button edit">save</button>
+                <button id="saveTicket" class="button save">save</button>
+                <button onclick="closeModal('ticket')" class="button close">
+                  close
+                </button>
+              </div>
+            </div>
+            <ul>
+              <li><input id="i01" type="text" maxlength="2" /></li>
+              <li><input id="i02" type="text" maxlength="2" /></li>
+              <li><input id="i03" type="text" maxlength="2" /></li>
+              <li><input id="i04" type="text" maxlength="2" /></li>
+              <li><input id="i05" type="text" maxlength="2" /></li>
+            </ul>
+            <ul>
+              <li><input id="i06" type="text" maxlength="2" /></li>
+              <li><input id="i07" type="text" maxlength="2" /></li>
+              <li><input id="i08" type="text" maxlength="2" /></li>
+              <li><input id="i09" type="text" maxlength="2" /></li>
+              <li><input id="i10" type="text" maxlength="2" /></li>
+            </ul>
+            <ul>
+              <li><input id="i11" type="text" maxlength="2" /></li>
+              <li><input id="i12" type="text" maxlength="2" /></li>
+              <li><input id="i13" type="text" maxlength="2" /></li>
+              <li><input id="i14" type="text" maxlength="2" /></li>
+              <li><input id="i15" type="text" maxlength="2" /></li>
+            </ul>
+            <ul>
+              <li><input id="i16" type="text" maxlength="2" /></li>
+              <li><input id="i17" type="text" maxlength="2" /></li>
+              <li><input id="i18" type="text" maxlength="2" /></li>
+              <li><input id="i19" type="text" maxlength="2" /></li>
+              <li><input id="i20" type="text" maxlength="2" /></li>
+            </ul>
+            <ul>
+              <li><input id="i21" type="text" maxlength="2" /></li>
+              <li><input id="i22" type="text" maxlength="2" /></li>
+              <li><input id="i23" type="text" maxlength="2" /></li>
+              <li><input id="i24" type="text" maxlength="2" /></li>
+              <li><input id="i25" type="text" maxlength="2" /></li>
+            </ul>
+          </div>
+        </div>
+        <p>vui lòng nhập số</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="cards" class="cards"></div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/ticket.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/handle.js"></script>
+  </body>
+</html>
