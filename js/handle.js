@@ -172,20 +172,21 @@ const checkWin = (arr) => {
 }
 
 const orderTicket = () => {
-  if (arrayNumber.length > 0) {
-    arrayTicket.forEach((e) => {
-      const { arr } = e
-      e.order = 0
-      e.arr.forEach((a) => {
-        if (arrayNumber.includes(a.value)) {
-          a.cl = 'green'
-          e.order += 1
-        }
-      })
-      const win = checkWin(arr)
-      e.order += win
+  arrayTicket.forEach((e) => {
+    const { arr } = e
+    e.order = 0
+    e.arr.forEach((a) => {
+      if (arrayNumber.includes(a.value)) {
+        a.cl = 'green'
+        e.order += 1
+      } else {
+        a.cl = ''
+      }
     })
-  }
+    const win = checkWin(arr)
+    e.order += win
+  })
+  arrayTicket.sort((a, b) => a.id - b.id)
   arrayTicket.sort((a, b) => b.order - a.order)
   loadTicket()
 }
