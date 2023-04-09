@@ -27,7 +27,7 @@ const addNumberFn = () => {
 
 const editNumberFn = () => {
   listEditNumber.value = ''
-  addNumberModal.style.display = 'block'
+  editNumberModal.style.display = 'block'
   arrayNumber.forEach((e) => {
     listEditNumber.value += e + ' '
   })
@@ -37,7 +37,7 @@ const saveNumberFn = () => {
   const newList = listEditNumber.value.trim().split(' ')
   arrayNumber = [...newList]
   localStorage.setItem('array_number', JSON.stringify(arrayNumber))
-  addNumberModal.style.display = 'none'
+  editNumberModal.style.display = 'none'
   loadNumber()
   orderTicket()
 }

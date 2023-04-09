@@ -13,15 +13,22 @@
 
     <div class="nav">
       <div class="add-number">
-        <input id="inputNumber" class="input-number" type="number" />
+        <input
+          id="inputNumber"
+          oninput="return checkInputNumber(this)"
+          class="input-number"
+          type="number"
+        />
         <button id="addNumber" class="button">Add number</button>
         <button id="editNumber" class="button">Edit board</button>
         <button id="addTicket" class="button font-bold">Add Tickets</button>
       </div>
-      <div class="list-number">Bingo board: <span id="listNumber"></span></div>
+      <div id="scrollList" class="list-number">
+        <div id="listNumber" class="balls"><span class="ball"></span></div>
+      </div>
     </div>
 
-    <div id="addNumberModal" class="modal">
+    <div id="editNumberModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
         <div class="card">
@@ -39,10 +46,11 @@
         <p>Please enter number</p>
       </div>
     </div>
+
     <div id="addTicketModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <p id="alert" class="alert"></p>
+        <div id="alert" class="alert"><span></span></div>
         <input type="hidden" id="idEdit" />
         <div class="card">
           <div class="bor">
@@ -56,39 +64,189 @@
             </div>
           </div>
           <ul>
-            <li><input id="i01" type="number" /></li>
-            <li><input id="i02" type="number" /></li>
-            <li><input id="i03" type="number" /></li>
-            <li><input id="i04" type="number" /></li>
-            <li><input id="i05" type="number" /></li>
+            <li>
+              <input
+                id="i01"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i02"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i03"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i04"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i05"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
           </ul>
           <ul>
-            <li><input id="i06" type="number" /></li>
-            <li><input id="i07" type="number" /></li>
-            <li><input id="i08" type="number" /></li>
-            <li><input id="i09" type="number" /></li>
-            <li><input id="i10" type="number" /></li>
+            <li>
+              <input
+                id="i06"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i07"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i08"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i09"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i10"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
           </ul>
           <ul>
-            <li><input id="i11" type="number" /></li>
-            <li><input id="i12" type="number" /></li>
-            <li><input id="i13" type="number" /></li>
-            <li><input id="i14" type="number" /></li>
-            <li><input id="i15" type="number" /></li>
+            <li>
+              <input
+                id="i11"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i12"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i13"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i14"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i15"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
           </ul>
           <ul>
-            <li><input id="i16" type="number" /></li>
-            <li><input id="i17" type="number" /></li>
-            <li><input id="i18" type="number" /></li>
-            <li><input id="i19" type="number" /></li>
-            <li><input id="i20" type="number" /></li>
+            <li>
+              <input
+                id="i16"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i17"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i18"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i19"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i20"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
           </ul>
           <ul>
-            <li><input id="i21" type="number" /></li>
-            <li><input id="i22" type="number" /></li>
-            <li><input id="i23" type="number" /></li>
-            <li><input id="i24" type="number" /></li>
-            <li><input id="i25" type="number" /></li>
+            <li>
+              <input
+                id="i21"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i22"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i23"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i24"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
+            <li>
+              <input
+                id="i25"
+                type="number"
+                oninput="return checkInputNumber(this)"
+              />
+            </li>
           </ul>
         </div>
         <p>Please enter number</p>
@@ -99,6 +257,8 @@
       <div id="cards" class="cards"></div>
     </div>
 
+    <script src="js/alert.js"></script>
+    <script src="js/checkInput.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/ticket.js"></script>
     <script src="js/number.js"></script>

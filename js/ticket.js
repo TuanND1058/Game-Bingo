@@ -39,151 +39,151 @@ const addTicketFn = (id) => {
   if (!i01.value != '' || isNaN(i01.value)) {
     i01.value = ''
     i01.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i02.value != '' || isNaN(i02.value)) {
     i02.value = ''
     i02.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i03.value != '' || isNaN(i03.value)) {
     i03.value = ''
     i03.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i04.value != '' || isNaN(i04.value)) {
     i04.value = ''
     i04.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i05.value != '' || isNaN(i05.value)) {
     i05.value = ''
     i05.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i06.value != '' || isNaN(i06.value)) {
     i06.value = ''
     i06.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i07.value != '' || isNaN(i07.value)) {
     i07.value = ''
     i07.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i08.value != '' || isNaN(i08.value)) {
     i08.value = ''
     i08.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i09.value != '' || isNaN(i09.value)) {
     i09.value = ''
     i09.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i10.value != '' || isNaN(i10.value)) {
     i10.value = ''
     i10.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i11.value != '' || isNaN(i11.value)) {
     i11.value = ''
     i11.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i12.value != '' || isNaN(i12.value)) {
     i12.value = ''
     i12.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i13.value != '' || isNaN(i13.value)) {
     i13.value = ''
     i13.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i14.value != '' || isNaN(i14.value)) {
     i14.value = ''
     i14.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i15.value != '' || isNaN(i15.value)) {
     i15.value = ''
     i15.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i16.value != '' || isNaN(i16.value)) {
     i16.value = ''
     i16.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i17.value != '' || isNaN(i17.value)) {
     i17.value = ''
     i17.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i18.value != '' || isNaN(i18.value)) {
     i18.value = ''
     i18.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i19.value != '' || isNaN(i19.value)) {
     i19.value = ''
     i19.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i20.value != '' || isNaN(i20.value)) {
     i20.value = ''
     i20.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i21.value != '' || isNaN(i21.value)) {
     i21.value = ''
     i21.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i22.value != '' || isNaN(i22.value)) {
     i22.value = ''
     i22.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i23.value != '' || isNaN(i23.value)) {
     i23.value = ''
     i23.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i24.value != '' || isNaN(i24.value)) {
     i24.value = ''
     i24.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
   if (!i25.value != '' || isNaN(i25.value)) {
     i25.value = ''
     i25.focus()
-    showAlert.innerText = 'input data number'
+    showAlert('danger', 'Input data number')
     return
   }
 
@@ -258,7 +258,7 @@ const addTicketFn = (id) => {
   i24.value = ''
   i25.value = ''
 
-  showAlert.innerText = 'add DONE and continue'
+  showAlert('success', 'Add done and continue')
   i01.focus()
   idEdit.value = ''
   nameTicket.innerHTML = 'New: ' + (arrayTicket.length + 1)

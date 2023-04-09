@@ -52,10 +52,13 @@ const loadTicket = () => {
 }
 loadTicket()
 
+const scrollList = document.getElementById('scrollList')
+
 const loadNumber = () => {
-  listNumber.innerHTML = ``
+  listNumber.innerHTML = ''
   arrayNumber.forEach((e) => {
-    listNumber.innerHTML += `${e} `
+    listNumber.innerHTML += `<span class="ball">${e}</span>`
   })
+  scrollList.scrollLeft = scrollList.scrollWidth
 }
 loadNumber()
