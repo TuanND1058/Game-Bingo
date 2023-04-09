@@ -57,7 +57,9 @@ const scrollList = document.getElementById('scrollList')
 const loadNumber = () => {
   listNumber.innerHTML = ''
   arrayNumber.forEach((e) => {
-    listNumber.innerHTML += `<span class="ball">${e}</span>`
+    if (e != '') {
+      listNumber.innerHTML += `<span class="ball">${e}</span>`
+    }
   })
   scrollList.scrollLeft = scrollList.scrollWidth
 }

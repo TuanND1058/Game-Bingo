@@ -17,12 +17,14 @@ const addNumberFn = () => {
     inputNumber.focus()
     return
   }
-  arrayNumber.push(inputNumber.value)
-  localStorage.setItem('array_number', JSON.stringify(arrayNumber))
+  if (!arrayNumber.includes(inputNumber.value)) {
+    arrayNumber.push(inputNumber.value)
+    localStorage.setItem('array_number', JSON.stringify(arrayNumber))
+    loadNumber()
+    orderTicket()
+  }
   inputNumber.focus()
   inputNumber.value = ''
-  loadNumber()
-  orderTicket()
 }
 
 const editNumberFn = () => {
@@ -35,7 +37,7 @@ const editNumberFn = () => {
 
 const saveNumberFn = () => {
   const newList = listEditNumber.value.trim().split(' ')
-  arrayNumber = [...newList]
+  arrayNumber = [...new Set(newList)]
   localStorage.setItem('array_number', JSON.stringify(arrayNumber))
   editNumberModal.style.display = 'none'
   loadNumber()
