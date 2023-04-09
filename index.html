@@ -14,33 +14,29 @@
     <div class="nav">
       <div class="add-number">
         <input id="inputNumber" class="input-number" type="number" />
-        <button id="addNumber" class="button">add number</button>
-        <button id="editNumber" class="button">edit number</button>
-        <button id="addTicket" class="button btn-add-ticket">add ticket</button>
+        <button id="addNumber" class="button">Add number</button>
+        <button id="editNumber" class="button">Edit board</button>
+        <button id="addTicket" class="button font-bold">Add Tickets</button>
       </div>
-      <div class="list-number">
-        <p id="listNumber"></p>
-      </div>
+      <div class="list-number">Bingo board: <span id="listNumber"></span></div>
     </div>
 
     <div id="addNumberModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <div class="cards">
-          <div class="card">
-            <div class="bor">
-              <span>edit number</span>
-              <div>
-                <button id="saveNumber" class="button save">save</button>
-                <button onclick="closeModal('number')" class="button close">
-                  close
-                </button>
-              </div>
+        <div class="card">
+          <div class="bor">
+            <span>Edit Number</span>
+            <div>
+              <button id="saveNumber" class="button save">Save</button>
+              <button onclick="closeModal('number')" class="button close">
+                Close
+              </button>
             </div>
-            <textarea id="listEditNumber" rows="10" cols="20"></textarea>
           </div>
+          <textarea id="listEditNumber" class="textarea"></textarea>
         </div>
-        <p>vui lòng nhập số</p>
+        <p>Please enter number</p>
       </div>
     </div>
     <div id="addTicketModal" class="modal">
@@ -48,56 +44,54 @@
       <div class="modal-content">
         <p id="alert" class="alert"></p>
         <input type="hidden" id="idEdit" />
-        <div class="cards">
-          <div class="card">
-            <div class="bor">
-              <span id="nameTicket">add new</span>
-              <div>
-                <button id="editTicket" class="button edit">save</button>
-                <button id="saveTicket" class="button save">save</button>
-                <button onclick="closeModal('ticket')" class="button close">
-                  close
-                </button>
-              </div>
+        <div class="card">
+          <div class="bor">
+            <span id="nameTicket" class="font-bold"></span>
+            <div>
+              <button id="editTicket" class="button edit">Save</button>
+              <button id="saveTicket" class="button save">Save</button>
+              <button onclick="closeModal('ticket')" class="button close">
+                Close
+              </button>
             </div>
-            <ul>
-              <li><input id="i01" type="number" /></li>
-              <li><input id="i02" type="number" /></li>
-              <li><input id="i03" type="number" /></li>
-              <li><input id="i04" type="number" /></li>
-              <li><input id="i05" type="number" /></li>
-            </ul>
-            <ul>
-              <li><input id="i06" type="number" /></li>
-              <li><input id="i07" type="number" /></li>
-              <li><input id="i08" type="number" /></li>
-              <li><input id="i09" type="number" /></li>
-              <li><input id="i10" type="number" /></li>
-            </ul>
-            <ul>
-              <li><input id="i11" type="number" /></li>
-              <li><input id="i12" type="number" /></li>
-              <li><input id="i13" type="number" /></li>
-              <li><input id="i14" type="number" /></li>
-              <li><input id="i15" type="number" /></li>
-            </ul>
-            <ul>
-              <li><input id="i16" type="number" /></li>
-              <li><input id="i17" type="number" /></li>
-              <li><input id="i18" type="number" /></li>
-              <li><input id="i19" type="number" /></li>
-              <li><input id="i20" type="number" /></li>
-            </ul>
-            <ul>
-              <li><input id="i21" type="number" /></li>
-              <li><input id="i22" type="number" /></li>
-              <li><input id="i23" type="number" /></li>
-              <li><input id="i24" type="number" /></li>
-              <li><input id="i25" type="number" /></li>
-            </ul>
           </div>
+          <ul>
+            <li><input id="i01" type="number" /></li>
+            <li><input id="i02" type="number" /></li>
+            <li><input id="i03" type="number" /></li>
+            <li><input id="i04" type="number" /></li>
+            <li><input id="i05" type="number" /></li>
+          </ul>
+          <ul>
+            <li><input id="i06" type="number" /></li>
+            <li><input id="i07" type="number" /></li>
+            <li><input id="i08" type="number" /></li>
+            <li><input id="i09" type="number" /></li>
+            <li><input id="i10" type="number" /></li>
+          </ul>
+          <ul>
+            <li><input id="i11" type="number" /></li>
+            <li><input id="i12" type="number" /></li>
+            <li><input id="i13" type="number" /></li>
+            <li><input id="i14" type="number" /></li>
+            <li><input id="i15" type="number" /></li>
+          </ul>
+          <ul>
+            <li><input id="i16" type="number" /></li>
+            <li><input id="i17" type="number" /></li>
+            <li><input id="i18" type="number" /></li>
+            <li><input id="i19" type="number" /></li>
+            <li><input id="i20" type="number" /></li>
+          </ul>
+          <ul>
+            <li><input id="i21" type="number" /></li>
+            <li><input id="i22" type="number" /></li>
+            <li><input id="i23" type="number" /></li>
+            <li><input id="i24" type="number" /></li>
+            <li><input id="i25" type="number" /></li>
+          </ul>
         </div>
-        <p>vui lòng nhập số</p>
+        <p>Please enter number</p>
       </div>
     </div>
 

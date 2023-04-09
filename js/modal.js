@@ -6,7 +6,7 @@ const showAlert = document.getElementById('alert')
 
 addTicket.onclick = () => {
   addTicketModal.style.display = 'block'
-  nameTicket.innerHTML = 'new: ' + (arrayTicket.length + 1)
+  nameTicket.innerHTML = 'New: ' + (arrayTicket.length + 1)
   editTicket.style.display = 'none'
   saveTicket.style.display = ''
   i01.focus()

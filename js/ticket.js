@@ -188,31 +188,31 @@ const addTicketFn = (id) => {
   }
 
   let arr = [
-    { cl: '', value: i01.value },
-    { cl: '', value: i02.value },
-    { cl: '', value: i03.value },
-    { cl: '', value: i04.value },
-    { cl: '', value: i05.value },
-    { cl: '', value: i06.value },
-    { cl: '', value: i07.value },
-    { cl: '', value: i08.value },
-    { cl: '', value: i09.value },
-    { cl: '', value: i10.value },
-    { cl: '', value: i11.value },
-    { cl: '', value: i12.value },
-    { cl: '', value: i13.value },
-    { cl: '', value: i14.value },
-    { cl: '', value: i15.value },
-    { cl: '', value: i16.value },
-    { cl: '', value: i17.value },
-    { cl: '', value: i18.value },
-    { cl: '', value: i19.value },
-    { cl: '', value: i20.value },
-    { cl: '', value: i21.value },
-    { cl: '', value: i22.value },
-    { cl: '', value: i23.value },
-    { cl: '', value: i24.value },
-    { cl: '', value: i25.value },
+    { class: '', value: i01.value },
+    { class: '', value: i02.value },
+    { class: '', value: i03.value },
+    { class: '', value: i04.value },
+    { class: '', value: i05.value },
+    { class: '', value: i06.value },
+    { class: '', value: i07.value },
+    { class: '', value: i08.value },
+    { class: '', value: i09.value },
+    { class: '', value: i10.value },
+    { class: '', value: i11.value },
+    { class: '', value: i12.value },
+    { class: '', value: i13.value },
+    { class: '', value: i14.value },
+    { class: '', value: i15.value },
+    { class: '', value: i16.value },
+    { class: '', value: i17.value },
+    { class: '', value: i18.value },
+    { class: '', value: i19.value },
+    { class: '', value: i20.value },
+    { class: '', value: i21.value },
+    { class: '', value: i22.value },
+    { class: '', value: i23.value },
+    { class: '', value: i24.value },
+    { class: '', value: i25.value },
   ]
 
   if (!isNaN(id)) {
@@ -261,7 +261,7 @@ const addTicketFn = (id) => {
   showAlert.innerText = 'add DONE and continue'
   i01.focus()
   idEdit.value = ''
-  nameTicket.innerHTML = 'new: ' + (arrayTicket.length + 1)
+  nameTicket.innerHTML = 'New: ' + (arrayTicket.length + 1)
 
   orderTicket()
 }
@@ -277,10 +277,9 @@ editTicket.onclick = editSaveTicketFn
 
 const editTicketFn = (id) => {
   addTicketModal.style.display = 'block'
-  nameTicket.innerHTML = 'edit'
   saveTicket.style.display = 'none'
   editTicket.style.display = ''
-  nameTicket.innerHTML = 'edit: ' + id
+  nameTicket.innerHTML = 'Edit: ' + id
 
   idEdit.value = id
 
