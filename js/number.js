@@ -42,7 +42,7 @@ const saveNumberFn = () => {
   const newList = listEditNumber.value
     .trim()
     .split(' ')
-    .filter((e) => e.length < 3)
+    .filter((e) => e.length < 3 && e != '')
   arrayNumber = [...new Set(newList)]
   localStorage.setItem('array_number', JSON.stringify(arrayNumber))
   editNumberModal.style.display = 'none'

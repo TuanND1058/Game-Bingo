@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="version">1.0.6</div>
+    <div class="version">1.0.7</div>
 
     <div class="nav">
       <div class="add-number">
@@ -41,7 +41,11 @@
               </button>
             </div>
           </div>
-          <textarea id="listEditNumber" class="textarea"></textarea>
+          <textarea
+            id="listEditNumber"
+            class="textarea"
+            oninput="checkInputNumberTextarea(this)"
+          ></textarea>
         </div>
       </div>
     </div>

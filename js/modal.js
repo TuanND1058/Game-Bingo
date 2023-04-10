@@ -18,6 +18,7 @@ const closeModal = (key) => {
       break
     case 'ticket':
       addTicketModal.style.display = 'none'
+      alertMsg.innerHTML = ''
       break
   }
 }

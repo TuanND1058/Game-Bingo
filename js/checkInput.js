@@ -11,49 +11,53 @@ const checkInputNumber = (e) => {
   }
 }
 
+const checkInputNumberTextarea = (e) => {
+  e.value = e.value.replace(/[^\d\s]+/g, '')
+}
+
 const eventSaveTicket = (e) => {
-  if (e.key === 'Enter') {
+  if (e.key === 'Enter' || e.key === 'Tab') {
     e.preventDefault()
     saveTicket.onclick()
   }
 }
 
-inputNumber.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
+inputNumber.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === 'Tab') {
     e.preventDefault()
     addNumber.onclick()
   }
 })
 
-listEditNumber.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
+listEditNumber.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === 'Tab') {
     e.preventDefault()
     saveNumber.onclick()
   }
 })
 
-i01.addEventListener('keypress', eventSaveTicket)
-i02.addEventListener('keypress', eventSaveTicket)
-i03.addEventListener('keypress', eventSaveTicket)
-i04.addEventListener('keypress', eventSaveTicket)
-i05.addEventListener('keypress', eventSaveTicket)
-i06.addEventListener('keypress', eventSaveTicket)
-i07.addEventListener('keypress', eventSaveTicket)
-i08.addEventListener('keypress', eventSaveTicket)
-i09.addEventListener('keypress', eventSaveTicket)
-i10.addEventListener('keypress', eventSaveTicket)
-i11.addEventListener('keypress', eventSaveTicket)
-i12.addEventListener('keypress', eventSaveTicket)
-i13.addEventListener('keypress', eventSaveTicket)
-i14.addEventListener('keypress', eventSaveTicket)
-i15.addEventListener('keypress', eventSaveTicket)
-i16.addEventListener('keypress', eventSaveTicket)
-i17.addEventListener('keypress', eventSaveTicket)
-i18.addEventListener('keypress', eventSaveTicket)
-i19.addEventListener('keypress', eventSaveTicket)
-i20.addEventListener('keypress', eventSaveTicket)
-i21.addEventListener('keypress', eventSaveTicket)
-i22.addEventListener('keypress', eventSaveTicket)
-i23.addEventListener('keypress', eventSaveTicket)
-i24.addEventListener('keypress', eventSaveTicket)
-i25.addEventListener('keypress', eventSaveTicket)
+i01.addEventListener('keydown', eventSaveTicket)
+i02.addEventListener('keydown', eventSaveTicket)
+i03.addEventListener('keydown', eventSaveTicket)
+i04.addEventListener('keydown', eventSaveTicket)
+i05.addEventListener('keydown', eventSaveTicket)
+i06.addEventListener('keydown', eventSaveTicket)
+i07.addEventListener('keydown', eventSaveTicket)
+i08.addEventListener('keydown', eventSaveTicket)
+i09.addEventListener('keydown', eventSaveTicket)
+i10.addEventListener('keydown', eventSaveTicket)
+i11.addEventListener('keydown', eventSaveTicket)
+i12.addEventListener('keydown', eventSaveTicket)
+i13.addEventListener('keydown', eventSaveTicket)
+i14.addEventListener('keydown', eventSaveTicket)
+i15.addEventListener('keydown', eventSaveTicket)
+i16.addEventListener('keydown', eventSaveTicket)
+i17.addEventListener('keydown', eventSaveTicket)
+i18.addEventListener('keydown', eventSaveTicket)
+i19.addEventListener('keydown', eventSaveTicket)
+i20.addEventListener('keydown', eventSaveTicket)
+i21.addEventListener('keydown', eventSaveTicket)
+i22.addEventListener('keydown', eventSaveTicket)
+i23.addEventListener('keydown', eventSaveTicket)
+i24.addEventListener('keydown', eventSaveTicket)
+i25.addEventListener('keydown', eventSaveTicket)
