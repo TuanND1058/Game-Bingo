@@ -35,7 +35,35 @@ const i23 = document.getElementById('i23')
 const i24 = document.getElementById('i24')
 const i25 = document.getElementById('i25')
 
-const addTicketFn = (id) => {
+const resetTicket = () => {
+  i01.value = ''
+  i02.value = ''
+  i03.value = ''
+  i04.value = ''
+  i05.value = ''
+  i06.value = ''
+  i07.value = ''
+  i08.value = ''
+  i09.value = ''
+  i10.value = ''
+  i11.value = ''
+  i12.value = ''
+  i13.value = ''
+  i14.value = ''
+  i15.value = ''
+  i16.value = ''
+  i17.value = ''
+  i18.value = ''
+  i19.value = ''
+  i20.value = ''
+  i21.value = ''
+  i22.value = ''
+  i23.value = ''
+  i24.value = ''
+  i25.value = ''
+}
+
+const addTicketFn = () => {
   let arrCheck = []
 
   if (!i01.value != '' || isNaN(i01.value)) {
@@ -416,65 +444,42 @@ const addTicketFn = (id) => {
     { class: '', value: i25.value },
   ]
 
-  if (!isNaN(id)) {
+  if (idEdit.value != '') {
     const arrNew = arrayTicket.filter((e) => {
-      if (e.id == id) {
+      if (e.id == idEdit.value) {
         e.arr = arr
       }
       return true
     })
     arrayTicket = [...arrNew]
+    addTicketModal.style.display = 'none'
   } else {
     arrayTicket.push({
-      id: arrayTicket.length + 1,
+      id: getId(),
       arr: arr,
       order: 0,
     })
+    i01.focus()
+    nameTicket.innerHTML = 'New: ' + getId()
+    showAlert('success', 'Add done and continue')
   }
-  localStorage.setItem('array_ticket', JSON.stringify(arrayTicket))
 
-  i01.value = ''
-  i02.value = ''
-  i03.value = ''
-  i04.value = ''
-  i05.value = ''
-  i06.value = ''
-  i07.value = ''
-  i08.value = ''
-  i09.value = ''
-  i10.value = ''
-  i11.value = ''
-  i12.value = ''
-  i13.value = ''
-  i14.value = ''
-  i15.value = ''
-  i16.value = ''
-  i17.value = ''
-  i18.value = ''
-  i19.value = ''
-  i20.value = ''
-  i21.value = ''
-  i22.value = ''
-  i23.value = ''
-  i24.value = ''
-  i25.value = ''
-
-  showAlert('success', 'Add done and continue')
-  i01.focus()
   idEdit.value = ''
-  nameTicket.innerHTML = 'New: ' + (arrayTicket.length + 1)
-
+  localStorage.setItem('array_ticket', JSON.stringify(arrayTicket))
+  resetTicket()
   orderTicket()
 }
 
-const editSaveTicketFn = () => {
-  addTicketFn(idEdit.value)
-  addTicketModal.style.display = 'none'
+const getId = () => {
+  let newId = 1
+  if (arrayTicket.length > 0) {
+    newId = arrayTicket[arrayTicket.length - 1].id + 1
+  }
+  return newId
 }
 
 saveTicket.onclick = addTicketFn
-
-editTicket.onclick = editSaveTicketFn
+editTicket.onclick = addTicketFn
 
 const editTicketFn = (id) => {
   addTicketModal.style.display = 'block'
@@ -484,9 +489,7 @@ const editTicketFn = (id) => {
 
   idEdit.value = id
 
-  const found = arrayTicket.find((e) => {
-    return e.id == id
-  })
+  const found = arrayTicket.find((e) => e.id == id)
 
   i01.value = found.arr[0].value
   i02.value = found.arr[1].value
@@ -517,9 +520,7 @@ const editTicketFn = (id) => {
 
 const deleteTicketFn = (id) => {
   if (confirm('Delete!') == true) {
-    const result = arrayTicket.filter((e) => {
-      return e.id != id
-    })
+    const result = arrayTicket.filter((e) => e.id != id)
     arrayTicket = [...result]
     localStorage.setItem('array_ticket', JSON.stringify(arrayTicket))
     loadTicket()

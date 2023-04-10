@@ -4,8 +4,9 @@ const addTicket = document.getElementById('addTicket')
 const nameTicket = document.getElementById('nameTicket')
 
 addTicket.onclick = () => {
+  resetTicket()
   addTicketModal.style.display = 'block'
-  nameTicket.innerHTML = 'New: ' + (arrayTicket.length + 1)
+  nameTicket.innerHTML = 'New: ' + getId()
   editTicket.style.display = 'none'
   saveTicket.style.display = ''
   i01.focus()
