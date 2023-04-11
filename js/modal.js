@@ -7,7 +7,6 @@ addTicket.onclick = () => {
   resetTicket()
   addTicketModal.style.display = 'block'
   nameTicket.innerHTML = 'New: ' + getId()
-  editTicket.style.display = 'none'
   saveTicket.style.display = ''
   i01.focus()
 }
