@@ -11,14 +11,8 @@ addTicket.onclick = () => {
   saveTicket.style.display = ''
   i01.focus()
 }
-const closeModal = (key) => {
-  switch (key) {
-    case 'number':
-      editNumberModal.style.display = 'none'
-      break
-    case 'ticket':
-      addTicketModal.style.display = 'none'
-      alertMsg.innerHTML = ''
-      break
-  }
+const closeModal = () => {
+  alertMsg.innerHTML = ''
+  editNumberModal.style.display = 'none'
+  addTicketModal.style.display = 'none'
 }

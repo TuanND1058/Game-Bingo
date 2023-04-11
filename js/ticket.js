@@ -1,5 +1,4 @@
 const cards = document.getElementById('cards')
-const editTicket = document.getElementById('editTicket')
 const saveTicket = document.getElementById('saveTicket')
 const idEdit = document.getElementById('idEdit')
 
@@ -452,7 +451,7 @@ const addTicketFn = () => {
       return true
     })
     arrayTicket = [...arrNew]
-    addTicketModal.style.display = 'none'
+    closeModal()
   } else {
     arrayTicket.push({
       id: getId(),
@@ -479,12 +478,9 @@ const getId = () => {
 }
 
 saveTicket.onclick = addTicketFn
-editTicket.onclick = addTicketFn
 
 const editTicketFn = (id) => {
   addTicketModal.style.display = 'block'
-  saveTicket.style.display = 'none'
-  editTicket.style.display = ''
   nameTicket.innerHTML = 'Edit: ' + id
 
   idEdit.value = id

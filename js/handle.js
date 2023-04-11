@@ -190,4 +190,5 @@ const orderTicket = () => {
   arrayTicket.sort((a, b) => b.order - a.order)
   loadTicket()
 }
+
 orderTicket()

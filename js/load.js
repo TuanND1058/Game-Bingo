@@ -50,6 +50,7 @@ const loadTicket = () => {
     `
   })
 }
+
 loadTicket()
 
 const scrollList = document.getElementById('scrollList')
@@ -63,4 +64,5 @@ const loadNumber = () => {
   })
   scrollList.scrollLeft = scrollList.scrollWidth
 }
+
 loadNumber()
