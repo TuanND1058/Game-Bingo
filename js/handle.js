@@ -12,7 +12,7 @@ const checkWin = (arr) => {
     arr[2].class = 'gold'
     arr[3].class = 'gold'
     arr[4].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[5].class != '' &&
@@ -26,7 +26,7 @@ const checkWin = (arr) => {
     arr[7].class = 'gold'
     arr[8].class = 'gold'
     arr[9].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[10].class != '' &&
@@ -40,7 +40,7 @@ const checkWin = (arr) => {
     arr[12].class = 'gold'
     arr[13].class = 'gold'
     arr[14].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[15].class != '' &&
@@ -54,7 +54,7 @@ const checkWin = (arr) => {
     arr[17].class = 'gold'
     arr[18].class = 'gold'
     arr[19].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[20].class != '' &&
@@ -68,7 +68,7 @@ const checkWin = (arr) => {
     arr[22].class = 'gold'
     arr[23].class = 'gold'
     arr[24].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[0].class != '' &&
@@ -82,7 +82,7 @@ const checkWin = (arr) => {
     arr[10].class = 'gold'
     arr[15].class = 'gold'
     arr[20].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[1].class != '' &&
@@ -96,7 +96,7 @@ const checkWin = (arr) => {
     arr[11].class = 'gold'
     arr[16].class = 'gold'
     arr[21].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[2].class != '' &&
@@ -110,7 +110,7 @@ const checkWin = (arr) => {
     arr[12].class = 'gold'
     arr[17].class = 'gold'
     arr[22].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[3].class != '' &&
@@ -124,7 +124,7 @@ const checkWin = (arr) => {
     arr[13].class = 'gold'
     arr[18].class = 'gold'
     arr[23].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[4].class != '' &&
@@ -138,7 +138,7 @@ const checkWin = (arr) => {
     arr[14].class = 'gold'
     arr[19].class = 'gold'
     arr[24].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[0].class != '' &&
@@ -152,7 +152,7 @@ const checkWin = (arr) => {
     arr[12].class = 'gold'
     arr[18].class = 'gold'
     arr[24].class = 'gold'
-    num += 10
+    num += 25
   }
   if (
     arr[4].class != '' &&
@@ -166,7 +166,7 @@ const checkWin = (arr) => {
     arr[12].class = 'gold'
     arr[16].class = 'gold'
     arr[20].class = 'gold'
-    num += 10
+    num += 25
   }
   return num
 }

@@ -43,7 +43,7 @@ const saveNumberFn = () => {
     .trim()
     .split(' ')
     .filter((e) => e.length < 3 && e != '' && e != 0)
-    .map((e) => (e = e * 1))
+    .map((e) => (e = e * 1 + ''))
   arrayNumber = [...new Set(newList)]
   localStorage.setItem('array_number', JSON.stringify(arrayNumber))
   editNumberModal.style.display = 'none'
