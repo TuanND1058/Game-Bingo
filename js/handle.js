@@ -63,7 +63,7 @@ const checkWin = (arr) => {
     arr[23].class != '' &&
     arr[24].class != ''
   ) {
-    arr[21].class = 'gold'
+    arr[20].class = 'gold'
     arr[21].class = 'gold'
     arr[22].class = 'gold'
     arr[23].class = 'gold'
